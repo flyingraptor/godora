@@ -1,0 +1,943 @@
+commit 6d8cbd7f1325fe3128b00cf64fed418785d2fe4d
+Author: Cláudio Prates <14627457+cprates@users.noreply.github.com>
+Date:   2025-04-30 11:59:59 +0100
+
+    Revert "deploy: data-sync - exclude autotest from qodana (#3889)" (#3890)
+    
+    This reverts commit 2ba0ea61ffac85dcb4f4f5298d9a1c4b1fdc34f1.
+
+commit 2ba0ea61ffac85dcb4f4f5298d9a1c4b1fdc34f1
+Author: Daria Gorchylina <daria.gorchylina@gmail.com>
+Date:   2025-04-30 12:53:36 +0300
+
+    deploy: data-sync - exclude autotest from qodana (#3889)
+
+commit 4be05dfb5890a1434cdeb38b7305e6d8608c96ca
+Author: Maciek Zieba <maciek.zieba@gmail.com>
+Date:   2025-04-30 11:52:27 +0200
+
+    subpermission fix (#3885)
+
+commit 0b59d7acf5508cd7e2be0297c659c1743860a55f
+Author: Daria Gorchylina <daria.gorchylina@gmail.com>
+Date:   2025-04-29 23:04:12 +0300
+
+    deploy: remove test.go from the ignore (#3888)
+
+commit 1fc2743df660327f93db813f73d99b522e74aed6
+Author: Daria Gorchylina <daria.gorchylina@gmail.com>
+Date:   2025-04-29 18:33:14 +0300
+
+    deploy: data-sync - set a lower coverage (#3887)
+
+commit d8836debf67d386c6264e3eabf5ee6fe57649f1b
+Author: Dmytro Sharhorodskyi <1337.um@gmail.com>
+Date:   2025-04-29 15:31:09 +0300
+
+    [data-sync-vessel] new component: Query jobs + query executor * query jobs poller * query jobs query executor * migrate to golangci-lint/v2 (#3866)
+    
+    * [data-sync-vessel] new component: Query jobs + query executor
+    * query jobs poller
+    * query jobs query executor
+    * fix qodana
+
+commit 8d0196e9c35f30e6c330429d14827d64bb87ed2d
+Author: Daria Gorchylina <daria.gorchylina@gmail.com>
+Date:   2025-04-29 10:46:53 +0100
+
+    Update pr_check_auth-service-vessel.yml
+
+commit e09934c3548c2b94069fd958e2da0d1f42d931b8
+Author: Daria Gorchylina <daria.gorchylina@gmail.com>
+Date:   2025-04-25 18:47:53 +0300
+
+    deploy/onboard cli (#3883)
+    
+    * [deploy] added qodana to the onboard-cli
+    
+    * [deploy] added qodana sarif file
+    
+    * fix lint issue
+    
+    * linter fix
+    
+    ---------
+    
+    Co-authored-by: mzieba <maciek.zieba@gmail.com>
+
+commit 27eaf0e5c479ae57734df8372d7033ece5c4cf2c
+Author: Gary Lloyd <gary.lloyd@90poe.io>
+Date:   2025-04-25 14:00:55 +0100
+
+    deploy: add qodana for cli (#3882)
+
+commit b575c81f4b740194a623d01e3c146abaa077e507
+Author: Nikos Raptis <nikolaos.raptis83@gmail.com>
+Date:   2025-04-25 13:44:59 +0300
+
+    KRKN-3239-validation-for-fuel-oil-temperature-gt-0
+
+commit a8f316971f68b96b534ef9adc76d5751596a1896
+Author: Daria Gorchylina <daria.gorchylina@gmail.com>
+Date:   2025-04-25 11:07:59 +0300
+
+    Qodana full migration (#3865)
+    
+    * set up qodana for auth-service and auth-vessel-service
+    
+    * set up qodana for bunkering-operations
+    
+    * set up qodana for data-sync, data-sync cahce and data-sync-vessel
+    
+    * added extra configs
+    
+    * updates sarif files
+    
+    * added more services
+    
+    * updated pipelines
+    
+    * update sarif files
+    
+    * auth-service linter fix
+    
+    * linter fixes
+    
+    * linter fixes
+    
+    * linter fix
+    
+    * linter fix
+    
+    * linter fix
+    
+    * linter fix
+    
+    * update sarif files
+    
+    * remove edge, statement of fact and destination
+    
+    * delete frontend-service sonarclound pipeline
+    
+    * removed metrics-pushed
+    
+    * updated sarif files
+    
+    ---------
+    
+    Co-authored-by: mzieba <maciek.zieba@gmail.com>
+
+commit e33a82e5aacbf43e29f24efd3da5e02aca3100b5
+Author: Tarik Čelik <tarik.chelik@gmail.com>
+Date:   2025-04-25 09:37:32 +0200
+
+    fix[bunkering-operations-service]: dont publish approved event to outbox for LNG report
+
+commit 06b66410c1a4384251f73a828ea4cfe3974874a0
+Author: Tarik Čelik <tarik.chelik@gmail.com>
+Date:   2025-04-24 16:43:41 +0200
+
+    feat[bunkering-operations-service]: drop outbox_onradar table KRKN-4764
+
+commit b309b248fa3a716e81b3f79981d9e013ab882175
+Author: Tarik Čelik <tarik.chelik@gmail.com>
+Date:   2025-04-24 16:20:56 +0200
+
+    feat[bunkering-operations-service]: write events to outbox and not outbox_onradar KRKN-4752
+
+commit 26f46ab39c25588b734c3f9ed9025228b305d528
+Author: Cláudio Prates <14627457+cprates@users.noreply.github.com>
+Date:   2025-04-24 13:09:09 +0100
+
+    OP-2267: Add and update readme files related to data-sync and seeder tools (#3877)
+    
+    * OP-2267: Add and update readme files
+    
+    * Rename config
+    
+    * Fix typo
+    
+    * Update integration tests
+
+commit 5a29cebc16c3e6541686ae8a6216ffe4cb049095
+Author: Tarik Čelik <tarik.chelik@gmail.com>
+Date:   2025-04-23 19:21:58 +0200
+
+    feat[bunkering-operations-service]: write approved and declined events to onradar outbox KRKN-4752
+
+commit 986143b826ad81ea56f0ddd36df2919f1e2894e0
+Author: Cláudio Prates <14627457+cprates@users.noreply.github.com>
+Date:   2025-04-24 09:18:42 +0100
+
+    OP-2263: Update seeder-cmp command (#3876)
+    
+    * OP-2263: Update seeder-cmp command
+    
+    Load data-sync and data-sync-vessel entities configs to
+    * Get columns that are discarded on shore and onboard
+    * Get the direction(s) in which a table is synced in order to skip a table if
+      it's not synced in the direction being tested
+    
+    * Fix typo
+
+commit 626a0d697ab0854eb4883402db29d7948953b037
+Author: Cláudio Prates <14627457+cprates@users.noreply.github.com>
+Date:   2025-04-23 16:28:08 +0100
+
+    OP-2263: Extend ValueConstraint with SQL IN operator (#3874)
+    
+    * OP-2263: Extend ValueConstraint with SQL IN operator
+    
+    Adds support to queries like `SELECT ... WHERE col IN (...);`
+    
+    * AddressLinter
+
+commit e147ca326a0f1d1818b63df8cdddae0184029fd0
+Author: Cláudio Prates <14627457+cprates@users.noreply.github.com>
+Date:   2025-04-23 13:16:57 +0100
+
+    OP-2263: Handle cyclic dependencies (#3873)
+    
+    * OP-2263: Handle cyclic dependencies
+    
+    Instead of handling the scan of entities and their dependency trees use the
+    existing Expression logic to build expressions for each dependency tree and
+    generate values from it.
+    
+    * OP-2263: Fix generation without query constraints
+    
+    * OP-2263: Update integration tests
+    
+    * Delete oudated tests
+    
+    * Address TODOs
+    
+    * OP-2263: Add logger
+    
+    * Address linter
+    
+    * Fix indentation
+    
+    * Remove unecessary step extracting relationships from ValueConstraint
+    
+    * Update unit test
+    
+    * Fix bug
+
+commit dd621ab6bfbf339def83757295ddf06dd3976d70
+Author: Tarik Čelik <tarik.chelik@gmail.com>
+Date:   2025-04-22 12:33:22 +0200
+
+    perf[bunkering-operations-client]: optimize bunkering report print KRKN-3243 (#3872)
+    
+    * perf[bunkering-operations-client]: optimise bunkering report print KRKN-3243
+    
+    * deploy[bunkering-operations-client]: exclude core service from Sonar
+
+commit 926397477c1e917e24e4dda3b3d3e04099da3a03
+Author: Tarik Čelik <tarik.chelik@gmail.com>
+Date:   2025-04-22 09:43:19 +0200
+
+    feat[bunkering-operations-service]: write event to outbox_onradar KRKN-4586 (#3870)
+
+commit 12142c56b2e35d13a98fbfb6e13929411b50727b
+Author: Tarik Čelik <tarik.chelik@gmail.com>
+Date:   2025-04-21 13:21:55 +0200
+
+    feat[bunkering-operations-client]: add print to PDF functionality KRKN-4117 KRKN-4503
+
+commit 5dcaed85f03a50b683f508665cab40c2cc84ad3b
+Author: Tarik Čelik <tarik.chelik@gmail.com>
+Date:   2025-04-21 13:40:19 +0200
+
+    deploy[bunkering-operations-client]: bump CI Go version to 1.24.2
+
+commit 8b8e79efbe61d2c38f463c4191d2fead5a0536ab
+Author: Dmytro Sharhorodskyi <1337.um@gmail.com>
+Date:   2025-04-17 13:15:35 +0300
+
+    bump github.com/pganalyze/pg_query_go/v5 -> v6 for Macos 15.4 support (#3862)
+    
+    * bump github.com/pganalyze/pg_query_go/v5 -> v6 for Macos 15.4 support
+    
+    * migrate to golangci-lint/v2
+
+commit 57d6b5a41966867ecb4d3c9bd791c1910d601974
+Author: Daria Gorchylina <daria.gorchylina@gmail.com>
+Date:   2025-04-17 11:12:12 +0100
+
+    Revert "[deploy] qodana migration"
+    
+    This reverts commit d7d9c60a1ec4f62131de674632f3ed7496c5983b.
+
+commit d7d9c60a1ec4f62131de674632f3ed7496c5983b
+Author: Daria Gorchylina <daria.gorchylina@gmail.com>
+Date:   2025-04-17 11:08:17 +0100
+
+    [deploy] qodana migration
+
+commit 88c3047c765c5e0fdaaa656bf74b6c0cb21881b7
+Author: Tarik Čelik <tarik.chelik@gmail.com>
+Date:   2025-04-16 21:52:18 +0200
+
+    fea[bunkering-operations-service]: add db schema migrations for outbox_onradar KRKN-4584
+
+commit 49b5553ef6471476940adfd6a2844affd9507e5a
+Author: Cláudio Prates <14627457+cprates@users.noreply.github.com>
+Date:   2025-04-16 12:40:00 +0100
+
+    [data-sync] Connect to DBs at startup (#3859)
+    
+    Instead of just creating the client, try to connect to DBs at startup.
+    This will avoid starting the service with, for example, bad credentials
+    and error at runtime.
+
+commit 25dfb65f0fb9a5d88859a0c8ae35e938a512c89f
+Author: Cláudio Prates <14627457+cprates@users.noreply.github.com>
+Date:   2025-04-16 12:25:54 +0100
+
+    OP-2259: Add details of storage errors (#3858)
+    
+    * OP-2259: Add details of storage errors
+    
+    Adds the details of Postgres errors. SQLite does not provide this information.
+    
+    * Address linter
+    
+    * Update glangci config
+
+commit b6957dd738e9589a35d79672c2a84c993ce2348e
+Author: Cláudio Prates <14627457+cprates@users.noreply.github.com>
+Date:   2025-04-16 10:03:02 +0100
+
+    OP-2242: Fix multiple bugs (#3857)
+    
+    * Tidy genRows
+    
+    * OP-2242: Fix bugs
+    
+    * Fix bugs
+    
+    * Delete unnecessary code
+    
+    * Update go.mod tidy
+    
+    * Update go.mod tidy
+
+commit 66fd022ccf9a8898a480bafa0c0e46ef84dd0544
+Author: Maciek Zieba <maciek.zieba@gmail.com>
+Date:   2025-04-14 13:26:13 +0200
+
+    backup improvements (#3855)
+    
+    * backup imprivements
+    
+    * backup
+
+commit eb04b1b195b48f26df7ce46685873e44e7042701
+Author: Maciek Zieba <maciek.zieba@gmail.com>
+Date:   2025-04-10 11:21:39 +0200
+
+    data-outbox: additional loggs (#3854)
+    
+    * data-outbox: additional loggs
+    
+    * linter fix
+
+commit 4c7ed8d30fdb57e36990c9517c26aaca08aa7c94
+Author: Maciek Zieba <maciek.zieba@gmail.com>
+Date:   2025-04-09 11:14:56 +0200
+
+    auth-service-vessel: accept service token request with permissions su… (#3852)
+    
+    * auth-service-vessel: accept service token request with permissions subset
+    
+    * code review fixes
+
+commit d4329d9680e604032218cbe54735770101cc6dbb
+Author: Cláudio Prates <14627457+cprates@users.noreply.github.com>
+Date:   2025-04-08 17:14:24 +0100
+
+    OP-2242: Compare seed data with synced data (#3853)
+    
+    * OP-2242: Compare seed data with synced data
+    
+    Implements a comparator of seeded tables with synced tables.
+    
+    * Address linter
+    
+    * Update go.mod
+    
+    * Add missing file
+
+commit 32cce5ea724ab8dbb274826d841ab1e045d37a02
+Author: Cláudio Prates <14627457+cprates@users.noreply.github.com>
+Date:   2025-04-08 12:13:01 +0100
+
+    OP-2240: Generate summary of seed work (#3851)
+    
+    * OP-2240: Generate summary of seed work
+    
+    * OP-2240: Add unit tests
+
+commit 7664ca8aec31c2373cb6e7b5a7b5e19685960121
+Author: Cláudio Prates <14627457+cprates@users.noreply.github.com>
+Date:   2025-04-08 10:03:29 +0100
+
+    OP-2216: Generate data based on sql queries (#3848)
+    
+    * OP-2216: Implement a parser for simple sql expressions
+    
+    * Update doc
+    
+    * Tidy
+    
+    * Rename method
+    
+    * Update config defaults
+    
+    * OP-2216: Extract constraints from SQL queries
+    
+    * Add order operators
+    
+    * OP-2216: Add operators In and Not
+    
+    * Update test
+    
+    * Support multiple tables in evaluations
+    
+    * Update tests
+    
+    * OP-2216: Respect partial unique indexes condition
+    
+    * OP-2216: Update sqlparser
+    
+    * Fix bugs in sqlparser
+    
+    * Add sqlparser unit tests
+    
+    * Update crawler
+    
+    * Rename file
+    
+    * Update config
+    
+    * OP-2216: Update crawler and seeder
+    
+    * Simplify value constraint by dropping use of tables map
+    
+    * OP-2216: Add unit tests
+    
+    * Implement 'not equal' value constraint operation
+    
+    I don't think we'll need this one right now but, added for consistency.
+    
+    * Add tests
+    
+    * Update psql executer
+    
+    * Update cmd
+    
+    * Address linter
+    
+    * go mod tidy
+    
+    * Fix typo
+    
+    * Update golangci config
+    
+    Address the error 'additional properties 'deadline' not allowed' in CI
+    
+    * Update golangci config
+    
+    * Fix bug
+    
+    * Add missing check constraints evaluation
+    
+    * OP-2216: Fix bug in check constraints
+    
+    Check constraints cannot rely on random values generation because the
+    generation of new rows will fail almost all the time for on tables
+    that are part of long dependency trees.
+    
+    Instead use the existing ValueConstraint generator to generate values
+    for these check constraints.
+
+commit 048e7f794061fb230dc3404ec8bf1d834365fff6
+Author: Dmytro Sharhorodskyi <1337.um@gmail.com>
+Date:   2025-04-04 14:02:36 +0300
+
+    [pvs] remove updgrades duplicates on `newVersion` command (#3850)
+    
+    * [pvs] remove updgrades duplicates on `newVersion` command
+
+commit e683a0008ddadebd4c944dcc10fbb7a460a517f4
+Author: Cláudio Prates <14627457+cprates@users.noreply.github.com>
+Date:   2025-03-19 16:52:37 +0000
+
+    OP-2226: Increase max. line length supported by the platform migrator (#3849)
+    
+    Increase the max len to 4KB to 1MB and through an error when
+    exceeded. Keep the current strategy because trying to read
+    lines to smaller buffers can lead to missing place holders if
+    one happens to be when the buffer size reaches the limit.
+
+commit f90abb52dddeb8a51cddad21c55ae89f63493558
+Author: Cláudio Prates <14627457+cprates@users.noreply.github.com>
+Date:   2025-03-18 12:59:23 +0000
+
+    OP-2222: Add PGX error details to logs when possible. (#3847)
+
+commit 8f9370c8c2631a07ea0bf1ad4d4a58a676429bcd
+Author: Maciek Zieba <maciek.zieba@gmail.com>
+Date:   2025-03-17 11:26:55 +0100
+
+    Revert "cleanup onboard cli from migration strategy (#3842)" (#3846)
+    
+    This reverts commit f5dbfb0c10ce4fe7240e6e59d59e3f09bba9874d.
+
+commit ac324ff5cc849be5c75c55752f7b5fc174065601
+Author: Nikos Raptis <nikolaos.raptis83@gmail.com>
+Date:   2025-03-17 10:39:17 +0200
+
+    KRKN-3856-bunkering-ops-client-bump-up-go-and-linter-version
+
+commit 5b5518f593890292899e39528bedc9a1458afd04
+Author: Nikos Raptis <nikolaos.raptis83@gmail.com>
+Date:   2025-03-14 17:39:36 +0200
+
+    KRKN-3856-bunkering-ops-bump-up-go-and-linter-version
+
+commit df3593d8b9b45f01f26ad2d41df93672d6275aa6
+Author: Mateusz Czeplowski <mateusz.czeplowski@90poe.io>
+Date:   2025-03-14 14:13:17 +0100
+
+    [bunkering-operations-client] feat: add requested parameters to filter out some vessels in vessels query [KRKN-4399]
+
+commit 9239b2b147e66ff5a607ab3ffa1453a122604a25
+Author: Mateusz Czeplowski <mateusz.czeplowski@90poe.io>
+Date:   2025-03-11 15:55:56 +0100
+
+    [bunkering-operations-client] fix: introduce BunkeringReportOverview in bunkeringReports query response [KRKN-4450]
+
+commit f5dbfb0c10ce4fe7240e6e59d59e3f09bba9874d
+Author: Maciek Zieba <maciek.zieba@gmail.com>
+Date:   2025-03-12 07:48:48 +0100
+
+    cleanup onboard cli from migration strategy (#3842)
+    
+    * cleanup onboard cli from migration strategy
+    
+    * linter fixes
+
+commit 61049d26d3b0159c295cafac68d50b0671a7b834
+Author: Cláudio Prates <14627457+cprates@users.noreply.github.com>
+Date:   2025-03-11 16:55:44 +0000
+
+    OP-2139: Finish values and insert stms generators (#3840)
+    
+    * OP-2139: Add generic gen functions
+    
+    * OP-2139: Implement type generator
+    
+    * OP-2139: Move SQL script generation
+    
+    * Fix psql types encoding
+    
+    * Fix bug in seeder
+    
+    If a referenced table has no rows then the constrained table cannot have any rows either.
+    
+    * OP-2139: Add seeder cmd to use as test
+    
+    * OP-2139: Finish Numeric type
+    
+    * OP-2139: Update integration tests
+    
+    * Remove outdated unit tests
+    
+    * OP-2139: Update config
+    
+    Add general config for TryGenRows and GenRetries that can be
+    overriden by table specific configs
+    
+    * Fix numeric generator
+    
+    * Add psq executer
+    
+    * Tidy error in recursive calls
+    
+    * OP-2139: Add integration tests
+    
+    * Update cmd
+    
+    * Address linter
+    
+    * Fix concurrent access of rand generator
+    
+    * Remove todo
+
+commit 88f8b77fee1b0f9a7a8e28ebdb7028540eab32f9
+Author: Cláudio Prates <14627457+cprates@users.noreply.github.com>
+Date:   2025-03-05 10:33:09 +0000
+
+    OP-2139: Implement seeder for postgres (#3839)
+    
+    * OP-2139: Add seeder first draft
+    
+    * OP-2139: Update crawler
+    
+    * OP-2139: Add enums as custom type
+    
+    * OP-2139: Adjust and fix multiple problems
+    
+    * Move psql related code to crawler pkg
+    
+    * Output sql script when configured
+    
+    * Insert generated data
+    
+    * Rename Rels
+    
+    * Add doc
+    
+    * OP-2139: Add config unit tests
+    
+    * OP-2139: Add config unit tests
+    
+    * Address linter
+    
+    * Rename tests
+    
+    * Fix dry run
+
+commit 05186d9dcb25ad16b6dea47e466d188c7a248fe2
+Author: Dmytro Sharhorodskyi <1337.um@gmail.com>
+Date:   2025-02-28 12:29:49 +0200
+
+    op 2185  auth vessel  filter crew (#3838)
+    
+    [auth-service-vessel] crew-onboard filtering:
+    * add grpc dependency on crew-onboard-service
+    * identity.GetUsers method now filters out non~crew-onboard users
+    * non-blocking way to start crew-domain grpc connection
+    * add service token to grpc call to crew-onboard service
+    * disable system_test until proper refactoring
+
+commit 6f67cb63289649014fe901acc79065d47c7612e7
+Author: Tarik Čelik <tarik.chelik@gmail.com>
+Date:   2025-02-27 11:49:42 +0100
+
+    feat[edge]: add support for LNG in GREX file validation constraints
+
+commit b4a445f9365da8c45162fbcc370c5a19bfcfd19a
+Author: Maciek Zieba <maciek.zieba@gmail.com>
+Date:   2025-02-26 10:21:20 +0000
+
+    grex validation fix (#3836)
+
+commit 052fcd248edabda35db9183a24c26067c0a250ec
+Author: Dmytro Sharhorodskyi <1337.um@gmail.com>
+Date:   2025-02-25 18:22:40 +0200
+
+    [pvs] fix sqlx query to fetch upgrades (#3835)
+
+commit b0a0171e7b70d43865c4a1b22c4819ad2ba3884e
+Author: Maciek Zieba <maciek.zieba@gmail.com>
+Date:   2025-02-25 15:53:07 +0100
+
+    Update template_ship_onboard_platform_service_binary_no_cgo.yaml
+
+commit 4c5ba62f3ac5e5db540829649b0da91d8c6bcc9a
+Author: Maciek Zieba <maciek.zieba@gmail.com>
+Date:   2025-02-25 15:52:38 +0100
+
+    Update template_ship_onboard_platform_service_binary.yaml
+
+commit 3ab384808ff824bd0fbcc0f02004f793b5e46a44
+Author: mzieba <maciek.zieba@gmail.com>
+Date:   2025-02-25 15:34:45 +0100
+
+    ship workflow fix
+
+commit b49b96ea596583d31820ce12e2e0eb572b08d5b4
+Author: Dmytro Sharhorodskyi <1337.um@gmail.com>
+Date:   2025-02-25 13:31:43 +0200
+
+    [pvs] move GHA http server to already present download http server (#3833)
+
+commit b0e2dbced9ca69292ba1a89d4b275d1a18d60f8e
+Author: Dmytro Sharhorodskyi <1337.um@gmail.com>
+Date:   2025-02-24 14:49:02 +0200
+
+    [pvs] add ability to react on failed upgrade build and new installer via HTTP (#3831)
+
+commit 0b661cc7d1a4a0587e71ece6b3a18a0711dc2f80
+Author: Cláudio Prates <14627457+cprates@users.noreply.github.com>
+Date:   2025-02-24 09:41:18 +0000
+
+    [data-sync-vessel] Fix typo in log line (#3832)
+
+commit e369d207347cd1e514872421d860c156b5adccf3
+Author: Miklos Bagi <68903245+miklosbagi@users.noreply.github.com>
+Date:   2025-02-21 13:33:01 +0100
+
+    [data-sync] test: FilterSQL for sqlite venom test - OP-2121 (#3830)
+    
+    * Add entry that doesn't sync over, and test validating it
+    
+    * Address test repeatibility
+
+commit c97789b9c67178fdb4e787fef067e0e9feb278be
+Author: Miklos Bagi <68903245+miklosbagi@users.noreply.github.com>
+Date:   2025-02-21 10:19:42 +0100
+
+    [data-sync] test: Add vessel-pg venom tests OP-2100 (#3829)
+    
+    * Add vessel pgsql venom variables and refactor shore side
+    
+    * Add vessel-pg venom tests, refactor make target & existing vessel sqlite tests
+    
+    * Sync wait-for-db timeouts, fix make target bug
+    
+    * Fix postgres-vessel default user
+    
+    * Fix typo
+    
+    * Update assertion order
+    
+    * Fine tune & cleanup
+
+commit 91c5452c4e58f504f2d982d221bfca4540e000e2
+Author: Miklos Bagi <68903245+miklosbagi@users.noreply.github.com>
+Date:   2025-02-20 11:38:44 +0100
+
+    [data-sync] test: add test data for vessel pgsql tests - OP-2100 (#3827)
+    
+    * Add build target to default-env-start, so binary is 100% built even with partial env starts
+    
+    * Test data for vessel and shore, update dataSource, add filterSQL
+    
+    * Update vessel test data migration
+
+commit 8551dc345450ad13b843bc735c02f3d0573fd6de
+Author: Tarik Čelik <tarik.chelik@gmail.com>
+Date:   2025-02-18 18:33:33 +0100
+
+    fix[bunkering-operations-client]: previous LNG properties not injected into new LNG report KRKN-4347
+
+commit d5167a451ceee5a65894655f9730956301d64fe3
+Author: Dmytro Sharhorodskyi <1337.um@gmail.com>
+Date:   2025-02-18 19:44:33 +0200
+
+    [auth-service-vessel] fix for gql->grpc token forwarding: JWKS verify chassis code expects the jwks URL as URL, not the path (#3824)
+    
+    [auth-service-vessel] fix for gql->grpc token forwarding: JWKS verify chassis code expects the jwks URL as URL, not the path
+
+commit 84c88465043229bcc5f1bc85742dbfa572db8e96
+Author: Tarik Čelik <tarik.chelik@gmail.com>
+Date:   2025-02-18 17:01:17 +0100
+
+    fix[bunkering-operations-service]: conventional tank quantity actual and before actual order of update KRKN-4345
+
+commit 796114a741d3d79e94bff367326e8ceb54bce38b
+Author: Tarik Čelik <tarik.chelik@gmail.com>
+Date:   2025-02-18 16:22:43 +0100
+
+    fix[bunkering-operations-client]: biofuel component POS document size converted to MB on every save KRKN-4351 (#3822)
+    
+    * fix[bunkering-operations-client]: biofuel component POS document size converted to MB on every save KRKN-4351
+    
+    * fix[bunkering-operations-client]: handle case where size is 0.0 KRKN-4351
+
+commit 823701a7adba6231efe7e6563ad57f518a926da0
+Author: Cláudio Prates <14627457+cprates@users.noreply.github.com>
+Date:   2025-02-18 14:21:54 +0000
+
+    OP-2138: Implement postgres crawler (#3817)
+    
+    * OP-2138: Implement postgres crawler
+    
+    Builds an abstraction of all relatioships, types and constraints of a given list
+    of tables in a postgres DB. This abstracted representation is then used to insert
+    mock data in those tables.
+    
+    * Add docs
+
+commit 20f957e25f77f26254c1a98ab7920a0237359e57
+Author: Daria Gorchylina <daria.gorchylina@gmail.com>
+Date:   2025-02-18 14:15:34 +0000
+
+    removed qodana-venom-testpipeline
+
+commit bcf7586ee273756d58002d3c8cca2bcfb650a627
+Author: Cláudio Prates <14627457+cprates@users.noreply.github.com>
+Date:   2025-02-18 12:24:32 +0000
+
+    [auth-service-vessel] Update config validation (#3818)
+    
+    Relax the validation of Account ids to accept any version of UUIDs.
+
+commit b8c53c4d8c5064474e1d065882a13c3614a13fe1
+Author: Miklos Bagi <68903245+miklosbagi@users.noreply.github.com>
+Date:   2025-02-18 09:09:52 +0100
+
+    [data-sync] test: add pgsql vessel-side infra component to venom test env (#3816)
+    
+    * Add test product data source
+    
+    * Add shore migration for pg-test db
+    
+    * Move vessel migration for pg-test db into correct place
+    
+    * Add entities config
+
+commit 68aadf5f6d5871b4279237ec34c1d3c548162052
+Author: Dmytro Sharhorodskyi <1337.um@gmail.com>
+Date:   2025-02-17 13:52:14 +0200
+
+    add env to specify account ID for m2m getAllTenants method (#3814)
+    
+    * add env to specify account ID for m2m getAllTenants method
+    * fix service test
+
+commit 77b6cd8fa10d8d39d531110e5b90800016113cfe
+Author: Tarik Čelik <tarik.chelik@gmail.com>
+Date:   2025-02-17 12:04:03 +0100
+
+    feat[bunkering-operations-client]: remove fuelInstancesTotal endpoint and integration to legacy fuel directory KRKN-4341
+
+commit 121cf7e4c39f3b7b5d3dff274bb61ddda5fee09b
+Author: Maciek Zieba <maciek.zieba@gmail.com>
+Date:   2025-02-14 11:55:51 +0000
+
+    platform: grex binary data validation (#3813)
+    
+    * platform: grex binary data validation
+    
+    * platform: grex binary data validation
+    
+    * platform: grex binary data validation
+
+commit 85dba342780dab1e689c7f2e2c45aca340049bc1
+Author: Maciek Zieba <maciek.zieba@gmail.com>
+Date:   2025-02-14 09:49:05 +0000
+
+    platform: grex binary data validation (#3812)
+
+commit 0bcb925a10b0a3722bbf60df1ffc47698a312eec
+Author: Tarik Čelik <tarik.chelik@gmail.com>
+Date:   2025-02-13 13:19:23 +0100
+
+    fix[bunkering-operations-client]: inject main fuel type into fuel actuals KRKN-4302
+
+commit c2921c41d7fc16a6ded8d77fc2e95f2448983255
+Author: Dmytro Sharhorodskyi <1337.um@gmail.com>
+Date:   2025-02-13 14:18:00 +0200
+
+    [config-provisioning] add PK constraint to ID field for certificate, tweak text fields (#3810)
+    
+    * [config-provisioning] add PK constraint to ID field for certificate, tweak text fields
+    * [config-provisioning] fix pr comments
+
+commit 808a4a8bff445791f9ee9e79f73136b186f34527
+Author: Maciek Zieba <maciek.zieba@gmail.com>
+Date:   2025-02-13 10:35:35 +0000
+
+    data-sync-vessel: add possibility enforce full data sync on specific … (#3808)
+    
+    * data-sync-vessel: add possibility enforce full data sync on specific entities
+    
+    * data-sync-vessel: add possibility enforce full data sync on specific entities
+
+commit 4a41b5bdc5567a4313c7594f0d15d8dc3b5a4fba
+Author: Maciek Zieba <maciek.zieba@gmail.com>
+Date:   2025-02-13 09:55:15 +0000
+
+    platform: grex binary data fix (#3809)
+
+commit 2868d213bc4b0ae425e18979da01f9e018ec94b3
+Author: Tarik Čelik <tarik.chelik@gmail.com>
+Date:   2025-02-11 17:10:20 +0100
+
+    refactor[bunkering-operations-client]: align PosDocument model with other document models KRKN-4302
+
+commit ea83c0326cf99a9273124e05ee5a7bbc733a85a0
+Author: Dmytro Sharhorodskyi <1337.um@gmail.com>
+Date:   2025-02-11 12:42:12 +0200
+
+    [config-provisioning] add PK constraint to ID field (#3805)
+
+commit 223e21c4550cb31d3b8ed883cc9c59d64796d249
+Author: Tarik Čelik <tarik.chelik@gmail.com>
+Date:   2025-02-10 14:05:49 +0100
+
+    feat[bunkering-operations-client]: introduce POS document KRKN-4302
+
+commit 05e59636f54b537859beaba7155a5f1390b6a825
+Author: Tarik Čelik <tarik.chelik@gmail.com>
+Date:   2025-02-10 13:58:32 +0100
+
+    feat[bunkering-operations-service]: introduce POS document KRKN-4302
+
+commit 74310012ab49d1de69909651cd98cc4fd62528fa
+Author: Tarik Čelik <tarik.chelik@gmail.com>
+Date:   2025-02-10 16:06:07 +0100
+
+    deploy[bunkering-operations-service]: bump CI go to 1.22.12
+
+commit 5bf6f517724fc4b96671ab182c4818c86f071d43
+Author: Cláudio Prates <14627457+cprates@users.noreply.github.com>
+Date:   2025-02-10 10:44:00 +0000
+
+    [data-sync] Mute context cancelled error (#3800)
+
+commit 78a8f3e2fb30868c70ec522fc9d7a5d908f2d7d4
+Author: Maciek Zieba <maciek.zieba@gmail.com>
+Date:   2025-02-10 10:19:07 +0000
+
+    data-sync-vessel: add possibility to filter data tha are send from vessel to shore (#3799)
+
+commit ba27516bd708ed3b0fc3c4a258320eeddacef7ea
+Author: Tarik Čelik <tarik.chelik@gmail.com>
+Date:   2025-02-07 12:54:32 +0100
+
+    feat[bunkering-operations-service]: deprecate BIOFUEL_DOCUMENT_TYPE_PROOF_OF_SUSTAINABILITY and move POS document to BiofuelComponent proto KRKN-4302
+
+commit f4c18be494004633971aa65f203270c0072a00be
+Author: Cláudio Prates <14627457+cprates@users.noreply.github.com>
+Date:   2025-02-07 09:09:43 +0000
+
+    OP-2165: Run SQLite integrity check at startup (#3797)
+    
+    Run SQLite DB integrity checks when data-sync-vessel starts.
+
+commit d35908de3d5f038f504392735ae41b6142c92390
+Author: Tarik Čelik <tarik.chelik@gmail.com>
+Date:   2025-02-04 11:00:47 +0100
+
+    feat[bunkering-operations-service]: add call to reports service KRKN-4111
+
+commit 2d76661fb08c415d2cbae43b56168933fe47e3f1
+Author: Tarik Čelik <tarik.chelik@gmail.com>
+Date:   2025-02-04 15:47:01 +0100
+
+    feat[bunkering-operations-service]: reset conventional tank actuals on fuel specification actual update KRKN-4253
+
+commit acdca20d61380e51cbabc6182a905483adefcf6f
+Author: Tarik Čelik <tarik.chelik@gmail.com>
+Date:   2025-02-04 14:52:00 +0100
+
+    feat[bunkering-operations-service]: prefill supplier barge with LNG facility name for LNG reports on creation KRKN-4210
+
+commit 3bdec7902645479529140a08583c8d32d1779eab
+Author: Tarik Čelik <tarik.chelik@gmail.com>
+Date:   2025-02-04 12:08:58 +0100
+
+    fix[bunkering-operations-service]: handle empty LNG tank actuals in LNG actuals update KRKN-4114
+
+commit d2af55701ff0c4272209159e2c67be5886669f1e
+Author: Tarik Čelik <tarik.chelik@gmail.com>
+Date:   2025-01-29 18:05:37 +0100
+
+    feat[bunkering-operations-service]: add support for LNG tank deletion KRKN-4114
